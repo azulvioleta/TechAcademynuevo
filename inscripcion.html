@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/myStyle.css">
+
+    <title>Inscripciones</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+
+        <nav class="navPrincipal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentoria.html">Mentoria</a></li>
+                <li><a href="inscripcion.html" id="btn_destacado">Inscribirse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido_principal">
+
+        <section>
+            <h2>Inscripción a cursos</h2>
+
+            <p>
+                Llena el siguiente formulario para inscribirte
+                a uno de nuestros cursos.
+            </p>
+
+            <form action="inscripcion.html" method="GET">
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre"
+                    required>
+
+                <br><br>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"
+                    required>
+
+                <br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono"
+                    required>
+
+                <br><br>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad"
+                    required>
+
+                <br><br>
+
+                <label for="curso">Selecciona tu curso:</label>
+
+                <select id="curso" name="curso" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="Frontend">Desarrollo Web FrontEnd</option>
+                    <option value="Python">Python para Ciencia de Datos</option>
+                    <option value="Bases de datos">Bases de Datos</option>
+                    <option value="Backend">Desarrollo Web BackEnd</option>
+                </select>
+
+                <br><br>
+
+                <label for="modalidad">Modalidad:</label>
+
+                <select id="modalidad" name="modalidad" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="En linea">En línea</option>
+                    <option value="Presencial">Presencial</option>
+                </select>
+
+                <br><br>
+
+                <label for="comentario">¿Por qué te interesa el curso?</label>
+                <br>
+                <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea>
+
+                <br><br>
+
+                <button type="submit">Enviar inscripción</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">TechAcademy</a>
+                <p>Construyendo soluciones digitales modernas y funcionales.</p>
+            </div>
+
+            <div class="footer-links">
+
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="mentoria.html">Mentoria</a></li>
+                        <li><a href="inscripcion.html">Inscribirse</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Terminos</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Redes</h4>
+                    <ul>
+                        <li><a href="#">X / Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechAcademy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
